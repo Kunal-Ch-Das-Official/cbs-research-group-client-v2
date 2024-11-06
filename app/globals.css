@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.blurBackground {
+  background-color: rgba(0, 0, 0, 0.747);
+  backdrop-filter: blur(1px);
+}
+.extraBlurBackground {
+  background-color: rgba(0, 0, 0, 0.747);
+  backdrop-filter: blur(3px);
+}
+.spacialBlur {
+  background-color: rgba(0, 0, 0, 0.164);
+  backdrop-filter: blur(8px);
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #0074d3;
+  font-size: small;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #0074d3;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.cardScrollbar::-webkit-scrollbar {
+  display: none;
+}
+.cardScrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #be8d1a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.swiper {
+  width: 340px;
+  height: 340px;
+}
+@media screen and (max-width: 480px) {
+  .swiper {
+    width: 200px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .swiper {
+    width: 180px;
+    height: 220px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+.tn-box {
+  width: 360px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0 auto 20px;
+  padding: 25px 15px;
+  text-align: left;
+  z-index: 10001;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  cursor: default;
+  display: block;
+  animation: 5s linear forwards fadeOut;
+}
+.tn-progress {
+  width: 0;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: 5px;
+  left: 2%;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 -1px 0 rgba(255, 255, 255, 0.6);
+}
+.tn-box .tn-progress {
+  animation: 4s linear 0.5s forwards runProgress;
+}
+@keyframes fadeOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  99% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+@keyframes runProgress {
+  0% {
+    width: 0%;
+    background: rgba(25, 160, 13, 0.822);
+  }
+  100% {
+    width: 96%;
+    background: red;
+  }
+}
