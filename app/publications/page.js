@@ -33,14 +33,14 @@ export const metadata = {
     description:
       "Details about the publications of IIEST Shibpur Chemistry depertment lab (CBS Research Group). The Government of India proposed IIEST in 2007 to address the growing need for qualified personnel in research and development, as well as in the industrial and service sectors. The first college to become an IIEST was IIEST, Shibpur in 2014",
     type: "profile",
-    url: "https://www.chinmoybhattacharyaelectrochemistry.com/publications",
+    url: "https://www.chinmoybhattacharya.in/publications",
     image: "/favicon_io/favicon.ico?v=4",
   },
   additional: {
     httpEquiv: "X-UA-Compatible",
     content: "IE=edge",
     canonical:
-      "https://www.chinmoybhattacharyaelectrochemistry.com/publications",
+      "https://www.chinmoybhattacharya.in/publications",
     icon: "/favicon_io/favicon.ico?v=4",
   },
 };

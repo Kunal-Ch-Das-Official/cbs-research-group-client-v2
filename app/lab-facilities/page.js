@@ -32,7 +32,7 @@ export const metadata = {
     description:
       "Discover the advanced lab facilities at CBS Research Group, providing the necessary equipment and environment for cutting-edge research in electrochemistry.",
     type: "website",
-    url: "https://www.chinmoybhattacharyaelectrochemistry.com/lab-facilities",
+    url: "https://www.chinmoybhattacharya.in/lab-facilities",
     image: "/favicon_io/favicon.ico?v=4",
   },
   iiest: {
@@ -81,7 +81,7 @@ export const metadata = {
     httpEquiv: "X-UA-Compatible",
     content: "IE=edge",
     canonical:
-      "https://www.chinmoybhattacharyaelectrochemistry.com/lab-facilities",
+      "https://www.chinmoybhattacharya.in/lab-facilities",
     icon: "/favicon_io/favicon.ico?v=4",
   },
 };
